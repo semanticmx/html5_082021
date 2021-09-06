@@ -1,7 +1,7 @@
 # html5_082021
-=====================
 
 Dive into HTML5 "Mark Pilgrim" exercises
+
 
 ## Chapter 1: MIME TYPES
 
@@ -14,8 +14,10 @@ text/cdd for CSS documents
 text/javascript for JavaScript files
 
 The syntax to indicate a HTML file used to be like this:
+
 ```<meta http-equiv="content-type" content="text/html"; charset="utf-8">```
 
 But now, in HTML5 it has been shortenend to: 
+
 ```<meta charset="utf-8">```
 
