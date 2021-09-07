@@ -5,9 +5,13 @@ In the following text, we are going to discuss MIME Types. MIME Types are unique
 MIME types are specified in the HTTP's request header or the ```<head>```tag, using accept attribute or content-type attribute.
 
 Examples: 
+
 text/html for HTML documents 
+
 text/plain for plain text
+
 text/cdd for CSS documents
+
 text/javascript for JavaScript files
 
 ## Why use them?
