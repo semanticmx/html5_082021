@@ -29,8 +29,3 @@ But now, in HTML5 has been shortenend to:
 ## References
 
 Pilgrim, (s. f.). Dive Into HTML5 by Mark Pilgrim. diveintohtml5. Recuperado 7 de septiembre de 2021, de http://diveintohtml5.info/past.html
-
-
-# html5_082021
-
-Dive Into HTML5 by Mark Pilgrim's exercises and Summary
