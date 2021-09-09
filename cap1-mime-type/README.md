@@ -1,6 +1,6 @@
 ## HTML5 MIME type
 
-Are unique identifiers for file formats, it helps to indicate to the browser how to interpret data.
+MIME types Are unique identifiers for file formats, it helps to indicate to the browser how to interpret data.
 
 MIME types are specified in the HTTP's request header or the ```<head>```tag, using accept attribute or content-type attribute.
 
