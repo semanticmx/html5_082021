@@ -1,13 +1,12 @@
 ## what
 
-- Se creo el folder de cap 1
-- Se agregó un ejemplo en index.html
-- Se agregó descripción en README.md
+- describe the purpose of this PR
 
 ## why
 
-- Para agregar ejemplos y un summary del capitulo 1
+- why we need this update
 
 ## References
 
-- Link al contenido del capitulo 1 : http://diveintohtml5.info/past.html
+- links to related content
+
