@@ -15,10 +15,34 @@ Modernizr collects all the necessary tests or "detections" which we can run on a
 
 On the official Modernizr web page, you can select the detects that you need or all the detections that Modernizr has available. Modernizr gather all the selected tests and print them into a .js file
 
-## APIs
+## Frequently APIs used
+The following part is a list with descriptions of the more frequently APIs used in HTML5.
+
+There're two ways to script an API test. You can use modernizr, which is the easiest way to do it,  just connect modernizr to the HTML file. The other way is to do the script yourself.
 
 ### Canvas
 Canvas is a container used to draw graphics on a web page, via JavaScript.
+
+JavaScript code:
+```
+   <script> 
+    try {
+        document.createElement("canvas").getContext("2d");
+        alert("HTML5 Canvas is supported.");
+    } catch (e) {
+        alert("HTML5 Canvas is not supported.");
+    }   
+```
+
+Modernnizr code:
+```
+    if (Modernizr.canvas) {
+    // let's draw some shapes!
+    } else {
+    // no native canvas support available :(
+    }
+
+```
 
 ### Canvas Text
 Canvas Text is just text drawn in a canvas container. ¿Why do we have to look out for the browser's canvas text support? Canvas Text API was added late after Canvas API. So some browsers could support Canvas API but might not Canvas API.
