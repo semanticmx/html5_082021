@@ -47,43 +47,162 @@ Modernnizr code:
 ### Canvas Text
 Canvas Text is just text drawn in a canvas container. ¿Why do we have to look out for the browser's canvas text support? Canvas Text API was added late after Canvas API. So some browsers could support Canvas API but might not Canvas API.
 
+Modernnizr code:
+```
+    if (Modernizr.canvastext) {
+    // let's draw some text!
+    } else {
+    // no native canvas text support available :(
+    }   
+```
+
 ### Video
 Video API allows to embed videos into the web page.
+
+Modernnizr code:
+```
+    if (Modernizr.video) {
+    // let's play some video!
+    } else {
+    // no native video support available :(
+    }
+```
 
 ### Video Formats
 A video has different formats. These formats are called codecs. Codecs are algorithms used to encode the video into a stream of bits. 
 
 Every browser supports a specific type of code, so you got to run a check for the common browsers.
 
+Modernnizr code:
+```
+    if (Modernizr.video) {
+    // let's play some video! but what kind?
+        if (Modernizr.video.webm) {
+            // try WebM
+        } else if (Modernizr.video.ogg) {
+            // try Ogg Theora + Vorbis in an Ogg container
+        } else if (Modernizr.video.h264){
+            // try H.264 video + AAC audio in an MP4 container
+        }
+    }
+```
+
 ### Local Storage
 Storage provides a way for browsers to store information on your computer, in a similar way to cookies but larger quantities of data.
+
+Modernnizr code:
+```
+    if (Modernizr.localstorage) {
+    // window.localStorage is available!
+    } else {
+    // no native support for local storage :(
+    // try a fallback or another third-party solution
+    }
+
+```
 
 ### Web Workers
 Web Workers provide a way for browsers to run JavaScript in the background. Web Workers allows to spawn multiple "threads" that can run at the same time. 
 
 These background threads allows to do background process while the main web page respond to the user. 
 
+Modernnizr code:
+```
+    if (Modernizr.webworkers) {
+    // window.Worker is available!
+    } else {
+    // no native support for web workers :(
+    }
+```
+
 ### Offline Web Applications
 When a web page is loaded, downloads all the necessary files, So once the user goes offline, they'll be able to use the downloaded page or pages. 
+
+Modernnizr code:
+```
+    if (Modernizr.applicationcache) {
+    // window.applicationCache is available!
+    } else {
+    // no native support for offline :(
+    // try a fallback or another third-party solution
+    }
+```
 
 ### Geolocation
 Geolocation API allows to figure out the user's IP address, wireless network connections,  Which cell tower your phone is connected to, or GPS hardware that calculates latitude and longitude.
 
+Modernnizr code:
+```
+    if (Modernizr.geolocation) {
+    // let's find out where you are!
+    } else {
+    // no native geolocation support available :(
+    // try geoPosition.js or another third-party solution
+    }
+```
+
 ### Input Types
 Input types allow accepting data from users. There're a wide variety of types of input.
 
+Modernnizr code:
+```
+    if (!Modernizr.inputtypes.date) {
+    // no native support for <input type="date"> :(
+    // maybe build one yourself with Dojo or jQueryUI
+    }
+```
+
 ### Placeholder Text
-Placeholder or hint text can be summarised as being the information in light grey found in an input field. It’s often there to help you put the correct information into that particular field
+Placeholder or hint text can be summarised as being the information in light grey found in an input field. It’s often there to help you put the correct information into that particular field.
+
+Modernnizr code:
+```
+    if (Modernizr.input.placeholder) {
+    // your placeholder text should already be visible!
+    } else {
+    // no placeholder support :(
+    // fall back to a scripted solution
+    }
+```
 
 ### Form Autofocus
 Autofocus automatically focuses the first input field of a web page form.
+
+Modernnizr code:
+```
+    if (Modernizr.input.autofocus) {
+    // autofocus works!
+    } else {
+    // no autofocus support :(
+    // fall back to a scripted solution
+    }
+```
 
 ### Micro Data
 Microdata is a standardized way to provide additional semantics in your web pages.
 
 Microdata lets you define your customized elements and start embedding custom properties in your web pages.
 
-At a high level, microdata consists of a group of name-value pairs. The groups are called items, and each name-value pair is a property. Items and properties are represented by regular elements
+At a high level, microdata consists of a group of name-value pairs. The groups are called items, and each name-value pair is a property. Items and properties are represented by regular elements.
+
+Modernnizr code:
+```
+    if (Modernizr.microdata) {
+    // supported
+    } else {
+    // not-supported
+    }
+```
 
 ### History
 The History API lets you interact with the browser history, trigger the browser navigation methods and change the address bar content.
+
+Modernnizr code:
+```
+    if (Modernizr.history) {
+    // history management works!
+    } else {
+    // no history support :(
+    // fall back to a scripted solution like History.js
+    }
+```
