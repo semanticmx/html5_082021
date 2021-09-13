@@ -5,12 +5,12 @@
     <title>Detecting HTML5 Features</title>
     
     <!-- Load modernizr.js -->
-    <script type="text/javascript" src="modernizr.js"></script>
+    <script defer type="text/javascript" src="modernizr.js"></script>
 
 
 
     <!-- CANVAS API Dection -->
-    <script> 
+    <script defer > 
     try {
         document.createElement("canvas").getContext("2d");
         alert("HTML5 Canvas is supported.");
