@@ -25,13 +25,14 @@ Canvas is a container used to draw graphics on a web page, via JavaScript.
 
 JavaScript code:
 ```
-   <script> 
+    <script defer> 
     try {
         document.createElement("canvas").getContext("2d");
         alert("HTML5 Canvas is supported.");
     } catch (e) {
         alert("HTML5 Canvas is not supported.");
     }   
+    </script> 
 ```
 
 Modernnizr code:
