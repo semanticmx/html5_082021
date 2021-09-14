@@ -70,29 +70,73 @@ Appears in the head tag and could have all the same attibutes.
 ### ``` <section> ``` Element
 The section element defines a section in a document.
 
+```
+<section>
+</section> 
+```
+
+
 ### ``` <nav> ``` Element
 The nav element defines a set of navigation links. The nav element is intended for large blocks of navigation links. However, *not all links in a document should be inside a nav element.*
+
+```
+<nav>
+</nav>
+```
 
 ### ``` <article> ``` Element
 The article element specifies independent, self-contained content
 
+```
+<article>
+</article>
+```
+
 ### ``` <aside> ``` Element
 The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.
+
+```
+<aside>
+</aside>
+```
 
 ### ``` <hgroup> ``` Element
 The hgroup element represents the heading of a section. The element is used to group a set of h1–h6 elements when the heading has multiple levels, such as subheadings, alternative titles, or taglines.
 
+```
+<hgroup>
+    <h1>This tag</h1>
+    <h2>Can wrap both tags</h2>
+</hgroup>
+```
+
 ### ``` <header> ``` Element
 The header element specifies a header for a document or section. The header element should be used as a container for introductory content.
+
+```
+<header>
+</header>
+```
 
 ### ``` <footer> ``` Element
 The footer element specifies a footer for a document or section A footer element should contain information about its containing element. footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
 
+```
+<footer>
+</footer>
+```
+
 ### ``` <time> ``` Element
 Defines a date/time.
+
+```
+<time datetime="2021-12-24 10:00">
+```
 
 ### ``` <mark> ``` Element
 Defines marked/highlighted text.
 
-
+```
+<mark> Highlight a text </mark>
+```
 
