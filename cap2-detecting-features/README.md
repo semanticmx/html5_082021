@@ -38,9 +38,9 @@ JavaScript code:
 Modernnizr code:
 ```
     if (Modernizr.canvas) {
-    // let's draw some shapes!
+        // let's draw some shapes!
     } else {
-    // no native canvas support available :(
+        // no native canvas support available :(
     }
 
 ```
@@ -51,9 +51,9 @@ Canvas Text is just text drawn in a canvas container. ¿Why do we have to look o
 Modernnizr code:
 ```
     if (Modernizr.canvastext) {
-    // let's draw some text!
+        // let's draw some text!
     } else {
-    // no native canvas text support available :(
+        // no native canvas text support available :(
     }   
 ```
 
@@ -63,9 +63,9 @@ Video API allows to embed videos into the web page.
 Modernnizr code:
 ```
     if (Modernizr.video) {
-    // let's play some video!
+        // let's play some video!
     } else {
-    // no native video support available :(
+        // no native video support available :(
     }
 ```
 
@@ -94,10 +94,10 @@ Storage provides a way for browsers to store information on your computer, in a 
 Modernnizr code:
 ```
     if (Modernizr.localstorage) {
-    // window.localStorage is available!
+        // window.localStorage is available!
     } else {
-    // no native support for local storage :(
-    // try a fallback or another third-party solution
+        // no native support for local storage :(
+        // try a fallback or another third-party solution
     }
 
 ```
@@ -110,9 +110,9 @@ These background threads allows to do background process while the main web page
 Modernnizr code:
 ```
     if (Modernizr.webworkers) {
-    // window.Worker is available!
+        // window.Worker is available!
     } else {
-    // no native support for web workers :(
+        // no native support for web workers :(
     }
 ```
 
@@ -122,10 +122,10 @@ When a web page is loaded, downloads all the necessary files, So once the user g
 Modernnizr code:
 ```
     if (Modernizr.applicationcache) {
-    // window.applicationCache is available!
+        // window.applicationCache is available!
     } else {
-    // no native support for offline :(
-    // try a fallback or another third-party solution
+        // no native support for offline :(
+        // try a fallback or another third-party solution
     }
 ```
 
@@ -135,10 +135,10 @@ Geolocation API allows to figure out the user's IP address, wireless network con
 Modernnizr code:
 ```
     if (Modernizr.geolocation) {
-    // let's find out where you are!
+        // let's find out where you are!
     } else {
-    // no native geolocation support available :(
-    // try geoPosition.js or another third-party solution
+        // no native geolocation support available :(
+        // try geoPosition.js or another third-party solution
     }
 ```
 
@@ -148,8 +148,8 @@ Input types allow accepting data from users. There're a wide variety of types of
 Modernnizr code:
 ```
     if (!Modernizr.inputtypes.date) {
-    // no native support for <input type="date"> :(
-    // maybe build one yourself with Dojo or jQueryUI
+        // no native support for <input type="date"> :(
+        // maybe build one yourself with Dojo or jQueryUI
     }
 ```
 
@@ -159,10 +159,10 @@ Placeholder or hint text can be summarised as being the information in light gre
 Modernnizr code:
 ```
     if (Modernizr.input.placeholder) {
-    // your placeholder text should already be visible!
+        // your placeholder text should already be visible!
     } else {
-    // no placeholder support :(
-    // fall back to a scripted solution
+        // no placeholder support :(
+        // fall back to a scripted solution
     }
 ```
 
@@ -172,10 +172,10 @@ Autofocus automatically focuses the first input field of a web page form.
 Modernnizr code:
 ```
     if (Modernizr.input.autofocus) {
-    // autofocus works!
+        // autofocus works!
     } else {
-    // no autofocus support :(
-    // fall back to a scripted solution
+        // no autofocus support :(
+        // fall back to a scripted solution
     }
 ```
 
@@ -189,9 +189,9 @@ At a high level, microdata consists of a group of name-value pairs. The groups a
 Modernnizr code:
 ```
     if (Modernizr.microdata) {
-    // supported
+        // supported
     } else {
-    // not-supported
+        // not-supported
     }
 ```
 
@@ -201,9 +201,9 @@ The History API lets you interact with the browser history, trigger the browser 
 Modernnizr code:
 ```
     if (Modernizr.history) {
-    // history management works!
+        // history management works!
     } else {
-    // no history support :(
-    // fall back to a scripted solution like History.js
+        // no history support :(
+        // fall back to a scripted solution like History.js
     }
 ```

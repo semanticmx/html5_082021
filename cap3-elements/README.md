@@ -24,7 +24,7 @@ This element has within an attribute called lang. This attribute defines the lan
 
 The head element is the first child or branch from the root element. The head element contains metadata. Metadata is information about the page.
 
-``` <head> </head> ```
+``` <head></head> ```
 
 ### Character Encoding
 
@@ -137,6 +137,6 @@ Defines a date/time.
 Defines marked/highlighted text.
 
 ```
-<mark> Highlight a text </mark>
+<mark>Highlight a text</mark>
 ```
 
