@@ -42,7 +42,6 @@ Modernnizr code:
     } else {
         // no native canvas support available :(
     }
-
 ```
 
 ### Canvas Text
@@ -99,7 +98,6 @@ Modernnizr code:
         // no native support for local storage :(
         // try a fallback or another third-party solution
     }
-
 ```
 
 ### Web Workers
