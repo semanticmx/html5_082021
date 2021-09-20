@@ -76,7 +76,7 @@ Every browser supports a specific type of code, so you got to run a check for th
 Modernnizr code:
 ```
     if (Modernizr.video) {
-    // let's play some video! but what kind?
+      // let's play some video! but what kind?
         if (Modernizr.video.webm) {
             // try WebM
         } else if (Modernizr.video.ogg) {
