@@ -14,17 +14,17 @@ The doctype declaration is information about what document type to expect. The s
 
 The other elements emerge from this root element.
 
-``` <html></html>  ```
+```<html></html>```
 
 This element has within an attribute called lang. This attribute defines the language of the HTML page.
 
-``` <html lang="en"> ```
+```<html lang="en">```
 
 ## The ```<Head>``` Element
 
 The head element is the first child or branch from the root element. The head element contains metadata. Metadata is information about the page.
 
-``` <head></head> ```
+```<head></head>```
 
 ### Character Encoding
 
@@ -44,7 +44,7 @@ meta tag syntax:
 Now in html5 this has been shortened to:
 
 ``` 
-<meta charset="utf-8" />
+<meta charset="utf-8"/>
 ```
 
 The charset="utf-8" specifies the character encoding.
@@ -67,7 +67,7 @@ Appears in the head tag and could have all the same attibutes.
 
 ## New Semantic Elements
 
-### ``` <section> ``` Element
+### ```<section>``` Element
 The section element defines a section in a document.
 
 ```
@@ -76,7 +76,7 @@ The section element defines a section in a document.
 ```
 
 
-### ``` <nav> ``` Element
+### ```<nav>``` Element
 The nav element defines a set of navigation links. The nav element is intended for large blocks of navigation links. However, *not all links in a document should be inside a nav element.*
 
 ```
@@ -84,7 +84,7 @@ The nav element defines a set of navigation links. The nav element is intended f
 </nav>
 ```
 
-### ``` <article> ``` Element
+### ```<article>``` Element
 The article element specifies independent, self-contained content
 
 ```
@@ -92,7 +92,7 @@ The article element specifies independent, self-contained content
 </article>
 ```
 
-### ``` <aside> ``` Element
+### ```<aside>``` Element
 The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.
 
 ```
@@ -100,7 +100,7 @@ The aside element represents a section of a page that consists of content that i
 </aside>
 ```
 
-### ``` <hgroup> ``` Element
+### ```<hgroup>``` Element
 The hgroup element represents the heading of a section. The element is used to group a set of h1–h6 elements when the heading has multiple levels, such as subheadings, alternative titles, or taglines.
 
 ```
@@ -110,7 +110,7 @@ The hgroup element represents the heading of a section. The element is used to g
 </hgroup>
 ```
 
-### ``` <header> ``` Element
+### ```<header>``` Element
 The header element specifies a header for a document or section. The header element should be used as a container for introductory content.
 
 ```
@@ -118,7 +118,7 @@ The header element specifies a header for a document or section. The header elem
 </header>
 ```
 
-### ``` <footer> ``` Element
+### ```<footer>``` Element
 The footer element specifies a footer for a document or section A footer element should contain information about its containing element. footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
 
 ```
@@ -126,14 +126,14 @@ The footer element specifies a footer for a document or section A footer element
 </footer>
 ```
 
-### ``` <time> ``` Element
+### ```<time>``` Element
 Defines a date/time.
 
 ```
 <time datetime="2021-12-24 10:00">
 ```
 
-### ``` <mark> ``` Element
+### ```<mark>``` Element
 Defines marked/highlighted text.
 
 ```
