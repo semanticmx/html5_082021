@@ -1,6 +1,6 @@
 # HTML5 Elements
 
-An HTML5 Element is everything drom the start tag to the end tag. An HTML element is defined by a start tag, some content, and an end tag.
+An HTML5 Element is everything from the start tag to the end tag. An HTML element is defined by a start tag, some content, and an end tag.
 
 ## THE DOCTYPE
 
