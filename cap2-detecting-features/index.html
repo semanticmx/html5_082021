@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>Detecting HTML5 Features</title>
+    
+    <!-- Load modernizr.js -->
+    <script defer type="text/javascript" src="modernizr.js"></script>
+
+
+
+    <!-- CANVAS API Dection -->
+    <script defer> 
+    try {
+        document.createElement("canvas").getContext("2d");
+        alert("HTML5 Canvas is supported.");
+    } catch (e) {
+        alert("HTML5 Canvas is not supported.");
+    }   
+    </script> 
+
+  </head>
+  
+  <body>
+    <h1> APIs</h1> 
+  </body>
+</html>
