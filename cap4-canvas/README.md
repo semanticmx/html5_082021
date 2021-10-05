@@ -23,7 +23,7 @@ var a_canvas=document.getElementById("a");
 
 ## Coordinates
 
-This canvas element has lines, letters and numbers, first we define the canvas element:
+In the following exercise we are going to create a canvas element with a coordinate map inside. This Canvas element has lines, letters and numbers, first we define the canvas element:
 ```
     <div id="container2">
       <canvas id="c"
@@ -33,7 +33,7 @@ This canvas element has lines, letters and numbers, first we define the canvas e
       </canvas>
     </div>
 ```
-I used the div tag as a container to be able to center it on the screen. After that, I used a canvas tag with an ID to use it in the .js file. Then I added the size and a border only to identify where is it.
+I used the div tag as a container to be able to center it on the screen. After that, I used a canvas tag with an ID to use the canvas element in the .js file. Then I added a size and a border, only to identify where it is.
 
 Now we can find the canvas element in the DOM by using:```document.getElementById();```, we have to call the ```getContext()``` method and set a 2d to the method. For example:
 ```
@@ -41,7 +41,7 @@ var c_canvas=document.getElementById("c");
 var context=c_canvas.getContext("2d");
 ```
 
-### grid background
+### Grid background
 
 Now, to make the grid, we use vertical and horizontal lines. For this, we use a loop statement that goes from 0.5 to the width "500", increasing 10 by 10:
 ```
@@ -49,9 +49,10 @@ for (var x = 0.5; x < 500; x += 10){
     context.moveTo(x, 0);
     context.lineTo(x, 375);
 } 
+```
 
 We do the same for "y" axis, just change width of height:
-
+```
 for (var y = 0.5; y < 375; y += 10){
     context.moveTo(0, y);
     context.lineTo(500, y);
@@ -90,16 +91,16 @@ context.stroke();
 
 ### Writing letter and numbers
 
-For the letters and numbers, we used the ```context.fillText();``` method.
+For the letters and numbers, we used the ```context.fillText();``` method. Inside the method, the text that is in quotes is the one that will be written. The other two parameters are the positioning of the letters.
 
-For the letters the syntax is:
+X and Y syntax:
 ```
 context.font = "bold 12px sans-serif";
 context.fillText("x", 248, 43);
 context.fillText("y", 58, 165);
 ```
 
-and for the numbers the syntax is:
+Coordinates syntax:
 ```
 context.textBaseline = "top";
 context.fillText("( 0 , 0 )", 8, 5);
