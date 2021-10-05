@@ -4,7 +4,7 @@ The <canvas> element is a resolution-dependent bitmap canvas which can be used f
 
 ## Building Canvas Elements
 
-To create a canvas element we just use <canvas> tag. The canvas element doen't has any content or borders, when we create a canvas element, it will be embedded within the background.
+To create a canvas element we use <canvas> tag. The canvas element doesn't has any content or borders, is embedded within the background.
 
 We have to give it a size to be able to use it, the syntax is:
 ```
@@ -14,9 +14,9 @@ We have to give it a size to be able to use it, the syntax is:
         style="border:1px dotted">
     </canvas>
 ```
-note: The border style is not necessary, is only used as a reference.
+*note: The borders are not necessary, their purpose is as a reference.*
 
-After that we can select the canvas element in our .js file:
+After we create the canvas tag and specify the size of it, we can select the canvas element in our .js file:
 ```
 var a_canvas=document.getElementById("a");
 ```
@@ -33,8 +33,9 @@ This canvas element has lines, letters and numbers, first we define the canvas e
       </canvas>
     </div>
 ```
+I used the div tag as a container to be able to center it on the screen. After that, I used a canvas tag with an ID to use it in the .js file. Then I added the size and a border only to identify where is it.
 
-After that we find the canvas element in the DOM by using: ```document.getElementById();```, we have to call the getContext() method and pass the string 2d to the method. For example:
+Now we can find the canvas element in the DOM by using:```document.getElementById();```, we have to call the ```getContext()``` method and set a 2d to the method. For example:
 ```
 var c_canvas=document.getElementById("c");
 var context=c_canvas.getContext("2d");
@@ -42,12 +43,14 @@ var context=c_canvas.getContext("2d");
 
 ### grid background
 
-Now, to make the grid we use vertical and horizontal lines:
+Now, to make the grid, we use vertical and horizontal lines. For this, we use a loop statement that goes from 0.5 to the width "500", increasing 10 by 10:
 ```
 for (var x = 0.5; x < 500; x += 10){
     context.moveTo(x, 0);
     context.lineTo(x, 375);
 } 
+
+We do the same for "y" axis, just change width of height:
 
 for (var y = 0.5; y < 375; y += 10){
     context.moveTo(0, y);
@@ -55,11 +58,12 @@ for (var y = 0.5; y < 375; y += 10){
 }
 ```
 
-After drawing the lines we have to apply ink to the draw using the following codes inside the loop "for":
+After drawing the lines we have to apply the "ink" to paint the lines. We use the following codes inside the loop "for":
 ```
     context.strokeStyle = "#eee";
     context.stroke();
 ```
+
 ### Vertical and horizontal lines
 
 First we have to create the fuction ```context.beginPath();```, afterwards we create the horizontal and vertical lines:
