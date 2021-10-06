@@ -123,7 +123,7 @@ First we create a variable with the linear gradient method:
 var my_gradient = context.createLinearGradient();
 ```
 
-To make it from top to bottom, we have to specify the parameter, first 0 is "y" right, second 0 is "x" buttom, third 0 is left and the last one is up. So, we use the last parameter to indicate the width of the gradient and to indicate where to start.
+To make it from top to bottom, we have to specify the parameter, first 0 is "y" right, second 0 is "x" buttom, third 0 is left and the last one is up. So, we use the last parameter to indicate the height of the gradient and to indicate where to start.
 
 ```
 context.createLinearGradient(0, 0, 0, 375);
@@ -141,7 +141,7 @@ context.fillStyle = my_gradient;
 context.fillRect(0, 0, 500, 375);
 ```
 
-full syntax:
+Full syntax:
 ```
 var my_gradient = context.createLinearGradient(0, 0, 0, 375);
 my_gradient.addColorStop(0, "black");
@@ -152,9 +152,11 @@ context.fillRect(0, 0, 500, 375);
 
 ## Images
 
-We can load an image using and img element (``` <img id="cat" src="images/cat.png">```) or using and image object (```cat.onload = function()```)in javascript
+First we load the image, we can use an img element (``` <img id="cat" src="images/cat.png">```) or use an image object (```cat.onload = function()```)in javascript.
 
-Image object:
+After loading the img we create the <canvas> element, we specify the size and the ID. Lastly, we create the script. To draw the image we use the ```context.drawImage();``` method.
+
+Using an <img> element:
 ```
 <img id="cat" 
     src="images/cat.png" 
@@ -175,7 +177,7 @@ window.onload = function() {
 </script>
 ```
 
-Image Object:
+Using an img() object:
 ```
 <canvas id="e" width="177" height="113"></canvas>
 <script>
