@@ -27,11 +27,8 @@ In html5 we can upload a video to the web page with the <vide> tag, there are no
 |       Codec/Container       |               Browsers              |  
 |-----------------------------|-------------------------------------|
 | Theora + Vorbis + Ogg       | Firefox, Chrome, Opera              |
-|-----------------------------|-------------------------------------|
-| H.264 + AAC + MP4           | IE, Safari, Chrome, IPhone, Android | 
-|-----------------------------|-------------------------------------|
+| H.264 + AAC + MP4           | IE, Safari, Chrome, IPhone, Android |
 | WebM                        | IE, Firefox, Chrome, Opera, Android |
-|-----------------------------|-------------------------------------|
 
 To cover all kind of browsers, we use three encodings:
 
