@@ -39,7 +39,7 @@ CACHE MANIFEST
 ```
 
 **CACHE**
-CACHE is just the header, here we point hte file that we want to Cache
+CACHE is just the header, here we point the file that we want to Cache
 ```
 CACHE:
 index.html
