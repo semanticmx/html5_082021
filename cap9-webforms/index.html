@@ -6,18 +6,17 @@
     <!--Autofocus with jQery fallback-->
     <script src="jquery.min.js"></script>
     <script>
-    $(document).ready(function() {
-    if (!("autofocus" in document.createElement("input"))) {
-    $("#q").focus();
-    }
-    });
+      $(document).ready(function() {
+        if (!("autofocus" in document.createElement("input"))){
+            $("#q").focus();
+          }
+        });
     </script>
   </head>
   <body>
     <header>
       <h1>Web Forms</h1>
     </header>
-    
     <div>
       <h2>Place Holder</h2>
       <form>
@@ -42,9 +41,9 @@
       <form name="c">
         <input id="d" autofocus>
         <script>
-        if (!("autofocus" in document.createElement("input"))) {
-        document.getElementById("d").focus();
-        }
+          if (!("autofocus" in document.createElement("input"))) {
+            document.getElementById("d").focus();
+          }
         </script>
         <input type="submit" value="Go">
       </form>
@@ -79,10 +78,10 @@
       <h2>Numbers as Spinboxes</h2>
       <form>
         <input type="number"
-        min="0"
-        max="10"
-        step="1"
-        value="0">
+          min="0"
+          max="10"
+          step="1"
+          value="0">
         <input type="submit" value="Go">
       </form>
     </div>
@@ -91,10 +90,10 @@
       <h2>Numbers as Slider</h2>
       <form>
         <input type="range"
-        min="0"
-        max="10"
-        step="1"
-        value="0">
+          min="0"
+          max="10"
+          step="1"
+          value="0">
         <input type="submit" value="Go">
       </form>
     </div>
