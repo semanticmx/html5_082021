@@ -41,12 +41,13 @@ To cover all kind of browsers, we use three encodings:
 After encoding the video correctly, we use the <video> tag, we specify the size, and the other atributtes, in this example I'm going to use ```controls``` atribute to be able to play it with all the fatures as a video player. After that we have to specify the video encoding. The syntax would be like this:
 
 ```
-        <video height="500px"
-            type="mp4"
-            width="500px"
-            controls>
+    <video 
+        type="mp4"
+        height="500px"
+        width="500px"
+        controls>
             <source src="Wednesday.mp4" type="video/mp4">
             <source src="Wednesday.webm" type="video/webm">
             <source src="Wednesday.ogv" type="video/ogv">
-        </video>
+    </video>
 ```

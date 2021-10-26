@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Forms</title>
+    <!--Autofocus with jQery fallback-->
+    <script src="jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        if (!("autofocus" in document.createElement("input"))){
+            $("#q").focus();
+          }
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Web Forms</h1>
+    </header>
+    <div>
+      <h2>Place Holder</h2>
+      <form>
+        <input name="a" placeholder="Go to a website">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+    <!-- Simple Autofocus -->
+    <!--
+    <div>
+      <h2>Autofocus </h2>
+      <form>
+        <input name="b" autofocus="">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+    -->
+    <!--Autofocus with fallback -->
+    <!--
+    <div>
+      <h2>Autofocus with fall back</h2>
+      <form name="c">
+        <input id="d" autofocus>
+        <script>
+          if (!("autofocus" in document.createElement("input"))) {
+            document.getElementById("d").focus();
+          }
+        </script>
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    -->
+    <!--Autofocus with jQuery fallback-->
+    <div>
+      <h2>Autofocus with jQuery fallback</h2>
+      <form name="e">
+        <input id="q" autofocus>
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <!--Email form-->
+    <div>
+      <h2>Email Form</h2>
+      <form>
+        <input type="email">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <!--Web address form-->
+    <div>
+      <h2>Web address form</h2>
+      <form>
+        <input type="url">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <!--Numbers as Spinboxes-->
+    <div>
+      <h2>Numbers as Spinboxes</h2>
+      <form>
+        <input type="number"
+          min="0"
+          max="10"
+          step="1"
+          value="0">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <!--Numbers as Slider-->
+    <div>
+      <h2>Numbers as Slider</h2>
+      <form>
+        <input type="range"
+          min="0"
+          max="10"
+          step="1"
+          value="0">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <!--Date Pickers-->
+    <div>
+      <h2>Date Pickers</h2>
+      <form>
+        <input type="datetime-local">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <!--Search Box -->
+    <div>
+      <h2>Search Box</h2>
+      <form>
+        <input name="g" type="search">
+        <input type="submit" value="Find">
+      </form>
+    </div>
+    <!-- Color Pickers -->
+    <div>
+      <h2>Color Pickers</h2>
+      <form>
+        <input name="h" type="color">
+        <input type="submit" value="Select">
+      </form>
+    </div>
+    <!-- Required Field-->
+    <div>
+      <h2>Required Field</h2>
+      <form>
+        <input id="h" required>
+        <input type="submit" value="search">
+      </form>
+    </div>
+  </body>
+</html>
