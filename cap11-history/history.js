@@ -6,23 +6,19 @@ const home = document.getElementById('home');
 const about = document.getElementById('about');
 const replace = document.getElementById('replace')
 
-// back() Method
 back.addEventListener('click', e =>{
 	history.back();
 });
 
-// forward() Method
 forward.addEventListener('click', e =>{
 	history.forward();
 });
 
-// go() Method
 go.addEventListener('click', e =>{
 	const num = parseInt(prompt('Enter a number'));
 	history.go(num);
 });
 
-// pushSate() Method
 home.addEventListener('click', e =>{
 	history.pushState({
 		page: 'home'
@@ -37,7 +33,6 @@ about.addEventListener('click', e =>{
 	document.body.append("##About State## ")
 });
 
-// replaceState() Method
 replace.addEventListener('click', e =>{
 	history.replaceState({
 		page: 'replaced'
@@ -45,7 +40,6 @@ replace.addEventListener('click', e =>{
 	document.body.append("##State Replaced## ")
 });
 
-//Pop State
 window.addEventListener('popstate', e =>{
 	console.log('Pop State: ', history.state);
 });
